@@ -1,0 +1,57 @@
+.header {
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #EBEBEB;
+     padding: 0 20px;
+   }
+   
+   h1 {
+     font-family: 'Monofett', monospace;
+     color: #000;
+   }
+   
+   #navbarlist {
+     font-family: Monofett;
+     font-size: 32px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     padding: 0 15px;
+   }
+   
+   ul {
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+     list-style-type: none;
+     font-size: 24px;
+     margin: 0;
+   }
+   
+   li {
+     padding-left:1em;
+     padding-right:1em;
+     margin: 0;
+   }
+   
+   #about {
+     color:#129490;
+   }
+   
+   #shop {
+     color:#65AD97;
+   }
+
+   #request {
+     color:#D5B658;
+   }
+   
+   #cart {
+     color:#9DB278;
+   }
+
+   #hamburger-menu {
+     padding-bottom:1em;
+     padding-right:1em;
+   }
