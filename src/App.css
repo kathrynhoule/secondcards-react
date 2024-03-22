@@ -9,16 +9,39 @@ html,body
 
 .header {
   display:flex;
-     align-items: center;
-     background-color: #EBEBEB;
-     justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EBEBEB;
+  padding: 0 20px;
 }
 
-.icon {
-  height: 50px;
-  width: 50px;
-  background-color: #ED254E;
-  border-radius: 20%;
+h1 {
+  font-family: 'Monofett', monospace;
+  color: #000;
+}
+
+#navbarlist {
+  font-family: Monofett;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 15px;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 24px;
+  margin: 0;
+}
+
+li {
+  padding-left:1em;
+  padding-right:1em;
+  margin: 0;
 }
 
 #about {
@@ -37,14 +60,6 @@ html,body
   color:#D5B658;
 }
 
-#mainlist {
-  font-family: Monofett;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 main {
   background-color: #484847;
   font-family: 'Monomaniac One', sans-serif;
@@ -56,18 +71,6 @@ main {
 body {
   margin: 0px;
   padding: 0;
-}
-
-h1 {
-  font-family: 'Monofett', monospace;
-  color: #000;
-}
-
-.icon {
-  height: 50px;
-  width: 50px;
-  background-color: #ED254E;
-  border-radius: 20%;
 }
 
 #hamburger-menu {
@@ -116,22 +119,6 @@ h1 {
   border-radius: 15px 15px 15px 15px;
   padding-left:1em;
   font-family: Monomaniac One;
-}
-
-ul {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  list-style-type: none;
-  font-size: 24px;
-  margin: 0;
-  padding-bottom: 1em;
-}
-
-li {
-  padding-left:1em;
-  padding-right:1em;
-  margin: 0;
 }
 
 #sublist {
