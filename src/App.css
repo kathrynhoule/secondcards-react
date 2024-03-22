@@ -169,18 +169,6 @@ div.desc {
   }
 }
 
-@media only screen and (min-width: 1201px) {
-  #hamburger-menu {
-       display: none;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  #mainlist {
-       display: none;
-  }
-}
-
 @media only screen and (max-width: 1037px) {
   #lastlist {
        font-size: 20px;
