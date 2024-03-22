@@ -4,7 +4,7 @@ import './App.css';
 function Header() {
   return (
     <header className ="header">
-      <div class="icon"></div>
+      <div className="icon"></div>
       <h1>Second Cards</h1>
     </header>
   );
