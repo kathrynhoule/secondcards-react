@@ -185,6 +185,9 @@ div.desc {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .responsive-image {
@@ -200,4 +203,75 @@ div.desc {
 .cell img {
   display: block;
   border-radius: 5px 5px 5px 5px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px){
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width:25%;
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 1000px){
+  .cell {
+    width:calc (100%/4);
+  }
+}
+
+@media screen and (min-width: 600px){
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
+@media screen and (min-width: 1000px){
+  .cell{
+    width: calc(25% - 2rem);
+  }
+}
+@media screen and (min-width: 600px){
+  .cell {
+    width:calc (100%/3);
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #hamburger-menu {
+       display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #mainlist {
+       display: none;
+  }
+}
+
+@media only screen and (max-width: 1037px) {
+  #lastlist {
+       font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #sublist {
+       display:none;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #lastlist {
+       display:none;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .dropdown {
+       display: none;
+  }
 }
