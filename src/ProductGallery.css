@@ -1,0 +1,24 @@
+.gallery {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     max-width: 1200px;
+     padding: 0 1rem;
+     border: 1px solid #ccc;
+ }
+ 
+.image-container {
+     flex-basis: calc(33.333% - 10px);
+     overflow: hidden;
+ }
+ 
+.image-container img {
+     width: 100%;
+     height: auto;
+     display: block;
+     border-radius: 5px 5px 5px 5px;
+ }
+
+.image-container img:hover {
+     border: 1px solid #777;
+}   

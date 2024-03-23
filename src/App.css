@@ -92,50 +92,6 @@ main {
   
 }
 
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.responsive-image {
-  max-width: 100%;
-}
-
-.cell {
-  text-align: justify;
-  font-family: Monomaniac One;
-  color: #EBEBEB;
-}
-
-.cell img {
-  display: block;
-  border-radius: 5px 5px 5px 5px;
-  width: 100%;
-  height: auto;
-}
-
 @media screen and (min-width: 600px){
   .grid {
     display: flex;
