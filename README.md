@@ -1,8 +1,10 @@
 # React + Vite
+This project utilizes Vite, as well as React and the React package react-refresh.
+React-refresh is necessary to view the images as they are currently set up.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# View Commits
+Commits for this project are only in the main branch, as this branch was intended only for the purpose of peer review.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# General Information
+This application is intended for an e-commerce website selling trading cards. 
+Currently, the application has limited functionality, but is intended to display a simple header and main body with some navigation list items and a simple gallery with some example images put in.
