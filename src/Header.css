@@ -5,6 +5,11 @@
      background-color: #EBEBEB;
      padding: 0 20px;
    }
+
+a {
+     text-decoration: none;
+     color: inherit;
+ }
    
    h1 {
      font-family: 'Monofett', monospace;

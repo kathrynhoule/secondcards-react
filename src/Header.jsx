@@ -12,10 +12,10 @@ const Header = () => {
           </div>
           <nav>
           <ul id="navbarlist">
-                   <li id="about">About</li>
-                   <li id="shop">Shop</li>
-                   <li id="cart">Cart</li>
-                   <li id="request">Request</li>
+                   <li id="about"><a href="">About</a></li>
+                   <li id="shop"><a href="">Shop</a></li>
+                   <li id="cart"><a href="">Cart</a></li>
+                   <li id="request"><a href="">Request</a></li>
                    <li><img src={instagram} alt="instagram" width="50" height="50" /></li>
                    <li><img src={twitter} alt="twitter" width="45" height="45" /></li>
                </ul>

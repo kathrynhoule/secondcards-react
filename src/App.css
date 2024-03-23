@@ -7,6 +7,11 @@ html,body
     overflow-x: hidden; 
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 main {
   background-color: #484847;
   font-family: 'Monomaniac One', sans-serif;
