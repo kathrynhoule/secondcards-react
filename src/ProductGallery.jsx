@@ -22,12 +22,14 @@ const ProductGallery = () => {
 ];
 
     return (
+     <div className="background">
         <div className="gallery">
             {images.map((image, index) => (
                 <div key={index} className="image-container">
                     <img src={image} alt={`${index + 1}`} />
                 </div>
             ))}
+        </div>
         </div>
     );
 };
