@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.css';
-import instagram from './icons/instagram.png';
-import twitter from './icons/twitter.png';
-import hamburgermenu from './icons/hamburgermenu.png';
+import instagram from '../icons/instagram.png';
+import twitter from '../icons/twitter.png';
+import hamburgermenu from '../icons/hamburgermenu.png';
 
 const Header = () => {
   return (
