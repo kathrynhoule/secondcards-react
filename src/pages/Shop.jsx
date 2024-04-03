@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+import React from 'react';
 import Filter from '../components/Filter';
 import ProductGallery from '../components/ProductGallery';
 
