@@ -1,5 +1,5 @@
 .background {
-     background-color: #484847;
+     background-color: #1E1E1E;
 }
 
 .gallery {
@@ -9,7 +9,7 @@
      max-width: 60%;
      padding: 3em;
      border: none;
-     background-color: #484847;
+     background-color: #1E1E1E;
      gap: 2em;
  }
  
