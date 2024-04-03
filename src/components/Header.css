@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 .header {
      display:flex;
      justify-content: space-between;
@@ -12,12 +14,12 @@ a {
  }
    
    h1 {
-     font-family: 'Monofett', monospace;
+     font-family: 'Share Tech Mono', monospace;
      color: #484847;
    }
    
    #navbarlist {
-     font-family: Monofett;
+     font-family: 'Share Tech Mono', monospace;
      font-size: 32px;
      font-style: normal;
      font-weight: 400;

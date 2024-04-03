@@ -8,14 +8,14 @@ const Header = () => {
   return (
       <div className="header">
           <div>
-          <h1>Second Cards</h1>
+          <h1>SECOND CARDS</h1>
           </div>
           <nav>
           <ul id="navbarlist">
-                   <li id="about"><a href="">About</a></li>
-                   <li id="shop"><a href="">Shop</a></li>
-                   <li id="cart"><a href="">Cart</a></li>
-                   <li id="request"><a href="">Request</a></li>
+                   <li id="about"><a href="">ABOUT</a></li>
+                   <li id="shop"><a href="">SHOP</a></li>
+                   <li id="cart"><a href="">CART</a></li>
+                   <li id="request"><a href="">REQUEST</a></li>
                    <li><img src={instagram} alt="instagram" width="50" height="50" /></li>
                    <li><img src={twitter} alt="twitter" width="45" height="45" /></li>
                </ul>
