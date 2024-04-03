@@ -1,13 +1,13 @@
 import React from 'react';
 import './ProductGallery.css';
-import ghostrickalucard from './cards/ghostrickalucard.png';
-import ghostrickfestival from './cards/ghostrickfestival.png';
-import illumi from './cards/illumi.png';
-import machi from './cards/machi.png';
-import milotic from './cards/milotic.png';
-import rayquaza from './cards/rayquaza.png';
-import rotom from './cards/rotom.png';
-import shaymin from './cards/shaymin.png';
+import ghostrickalucard from '../cards/ghostrickalucard.png';
+import ghostrickfestival from '../cards/ghostrickfestival.png';
+import illumi from '../cards/illumi.png';
+import machi from '../cards/machi.png';
+import milotic from '../cards/milotic.png';
+import rayquaza from '../cards/rayquaza.png';
+import rotom from '../cards/rotom.png';
+import shaymin from '../cards/shaymin.png';
 
 const ProductGallery = () => {
     const images = [

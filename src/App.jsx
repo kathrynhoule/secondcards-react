@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css'
 import Header from './components/Header';
 import Filter from './pages/Shop';
-import ProductGallery from './ProductGallery';
+import ProductGallery from './components/ProductGallery';
 
 function App() {
   return (
