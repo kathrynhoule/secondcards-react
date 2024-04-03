@@ -7,7 +7,7 @@ const Header = () => {
   return (
       <div className="header">
           <div>
-          <h1>SECOND CARDS</h1>
+          <h1><Link to="/">SECOND CARDS</Link></h1>
           </div>
           <nav>
           <ul id="navbarlist">

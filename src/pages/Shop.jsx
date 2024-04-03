@@ -5,7 +5,6 @@ import ProductGallery from '../components/ProductGallery';
 function Shop() {
      return (
           <div>
-<Header />
 <Filter />
 <ProductGallery />
 </div>
