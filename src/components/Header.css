@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 .header {
      display:flex;
@@ -14,12 +14,13 @@ a {
  }
    
    h1 {
-     font-family: 'Share Tech Mono', monospace;
+     font-family: 'Kode Mono', monospace;
+     font-weight: 700;
      color: #484847;
    }
    
    #navbarlist {
-     font-family: 'Share Tech Mono', monospace;
+     font-family: 'Kode Mono', monospace;
      font-size: 32px;
      font-style: normal;
      font-weight: 400;
