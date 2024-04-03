@@ -1,17 +1,13 @@
 import React from 'react';
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css'
-import Header from './components/Header';
-import Filter from './pages/Shop';
-import ProductGallery from './components/ProductGallery';
+import Shop from './pages/Shop';
 
 function App() {
   return (
     //<Router>
       <div className="App">
-        <Header />
-        <Filter />
-        <ProductGallery />
+        <Shop />
       </div>
   //</Router>
   );
