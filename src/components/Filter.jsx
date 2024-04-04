@@ -11,10 +11,6 @@ function Filter() {
               </ul>
               <div class="dropdown"><p>Filter by</p> <img id="arrow" src={arrow} alt="click to open menu" width="20" height="20" />
               </div>
-              <div class="search"><p>search...</p></div>
-             
-              <hr />
-   
               <ul id="lastlist">
                   <li>Filter by:</li>
                   <li>Series</li>
