@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 .searchbarcontainer {
      padding-top: 10px;
      width: 40%;
@@ -6,4 +8,35 @@
      flex-direction: column;
      align-items: center;
      min-width: 200px;
+     background-color: #1E1E1E;
+}
+
+.inputwrap {
+     background-color: #EBEBEB;
+     width: 100%;
+     border-radius: 12px;
+     height: 2em;
+     padding: 0 15px;
+     display: flex;
+     align-items: center;
+}
+
+input {
+     background-color: transparent;
+     border: none;
+     height: 100%;
+     width: 100%;
+     margin-left: 10px;
+     font-family: 'Kode Mono', monospace;
+     font-size: 0.8em;
+     font-style: normal;
+     font-weight: 400;
+}
+
+input:focus {
+     outline: none;
+}
+
+#search-icon {
+     color: #1E1E1E;
 }
