@@ -6,10 +6,10 @@ import SearchBar from '../components/SearchBar';
 function Shop() {
      return (
           <div>
-<Filter />
-<SearchBar />
-<ProductGallery />
-</div>
+               <SearchBar />
+               <Filter />
+               <ProductGallery />
+          </div>
      );
 }
    
