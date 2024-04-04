@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './SearchBar.css';
 import {FaSearch} from "react-icons/fa";
 
-function SearchBar () {
+function SearchBar ({products}) {
      const [searchInput, setSearchInput] = useState('');
 
      const handleSearchChange = (e) => {
@@ -17,6 +17,12 @@ function SearchBar () {
                placeholder="Search..."
                value={searchInput}
                onChange={handleSearchChange} />
+
+          <ul>
+               {filteredProducts.map((product) => (
+               <li key={product.id}>{product.name}</li>
+               ))}
+          </ul>
           </div>
      );
 }
