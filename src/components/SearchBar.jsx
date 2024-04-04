@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import './SearchBar.css';
 import {FaSearch} from "react-icons/fa";
 
-function SearchBar ({products}) {
+function SearchBar ({products, onSearch}) {
      const [searchInput, setSearchInput] = useState('');
 
      const handleSearchChange = (e) => {
           setSearchInput(e.target.value);
-        };
+               const filteredProducts = products.filter((product) =>
+               product.name.toLowerCase().includes(e.target.value.toLowerCase())
+          );
+          onSearch(filteredProducts);
+     };
 
      return (
           <div class = "inputwrap">
@@ -17,12 +21,6 @@ function SearchBar ({products}) {
                placeholder="Search..."
                value={searchInput}
                onChange={handleSearchChange} />
-
-          <ul>
-               {filteredProducts.map((product) => (
-               <li key={product.id}>{product.name}</li>
-               ))}
-          </ul>
           </div>
      );
 }
