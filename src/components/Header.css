@@ -5,7 +5,10 @@
      justify-content: space-between;
      align-items: center;
      background-color: #1E1E1E;
-     padding: 0 20px;
+     padding-top: 0.4em;
+     padding-left: 2em;
+     padding-right: 2em;
+     padding-bottom: 1em;
    }
 
 a {
@@ -38,27 +41,27 @@ a {
      margin: 0;
    }
    
-   li {
+  li {
      padding-left:1em;
      padding-right:1em;
      margin: 0;
-   }
+  }
    
    #about {
      color:#129490;
-   }
+  }
    
    #shop {
      color:#65AD97;
-   }
+  }
 
    #request {
      color:#D5B658;
-   }
+  }
    
    #cart {
      color:#9DB278;
-   }
+  }
 
    #account {
     color:#D5B658;
@@ -67,6 +70,8 @@ a {
    #hamburger-menu {
      padding-bottom:1em;
      padding-right:1em;
+     padding-top: 1em;
+     color: #EBEBEB;
    }
 
    @media only screen and (min-width: 1201px) {

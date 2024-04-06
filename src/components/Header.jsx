@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.css';
-import hamburgermenu from '../icons/hamburgermenu.png';
 import { Link } from 'react-router-dom';
 import {FaShoppingCart} from "react-icons/fa";
+import {GiHamburgerMenu} from "react-icons/gi";
 
 const Header = () => {
   return (
@@ -14,11 +14,11 @@ const Header = () => {
           <ul id="navbarlist">
                    <li id="about"><Link to="/about">ABOUT</Link></li>
                    <li id="shop"><Link to="/shop">SHOP</Link></li>
-                   <li id="cart"><Link to="/cart">CART</Link></li>
+                   <li id="cart"><Link to="/cart"><FaShoppingCart />CART</Link></li>
                    <li id="request"><Link to="/contact">CONTACT</Link></li>
                    <li id="account"><Link to="/account">ACCOUNT</Link></li>
                </ul>
-               <img id="hamburger-menu" src={hamburgermenu} alt="click to open menu" width="40" height="40" />
+               <GiHamburgerMenu id="hamburger-menu" size={32} alt="click to open menu" />
           </nav>
       </div>
   );
