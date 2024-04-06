@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 html,body
 {
     width: 100%;
@@ -15,7 +17,10 @@ a {
 
 main {
   background-color: #1E1E1E;
-  font-family: 'Monomaniac One', sans-serif;
+  font-family: 'Kode Mono', monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   align-items: center;
   margin-top: 0;
   padding: 0;
@@ -31,29 +36,41 @@ body {
 }
 
 #singles {
-  font-family: Monofett;
-  color: #3C3C39;
+  font-family: 'Kode Mono', monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #1E1E1E;
   background-color: #D9D9D9;
   border-radius: 15px 15px 15px 15px;
 }
 
 #packs {
-  font-family: Monofett;
-  color: #3C3C39;
+  font-family: 'Kode Mono', monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #1E1E1E;
   background-color: #D9D9D9;
   border-radius: 15px 15px 15px 15px;
 }
 
 #boxes {
-  font-family: Monofett;
-  color: #3C3C39;
+  font-family: 'Kode Mono', monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #1E1E1E;
   background-color: #D9D9D9;
   border-radius: 15px 15px 15px 15px;
 }
 
 #all {
-  font-family: Monofett;
-  color: #3C3C39;
+  font-family: 'Kode Mono', monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #1E1E1E;
   background-color: #D9D9D9;
   border-radius: 15px 15px 15px 15px;
 }
@@ -86,7 +103,10 @@ main {
   width:50%;
   margin-left:25%;
   margin-right:25%;
-  font-family: Monomaniac One;
+  font-family: 'Kode Mono', monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   color: #EBEBEB;
 }
 
