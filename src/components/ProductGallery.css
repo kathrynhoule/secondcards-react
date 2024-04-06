@@ -5,9 +5,10 @@
 .gallery {
      display: flex;
      flex-wrap: wrap;
-     margin: 0 auto;
+     margin: auto;
      max-width: 60%;
-     padding: 3em;
+     padding-top: 3em;
+     padding-left: 2em;
      border: none;
      background-color: #1E1E1E;
      gap: 2em;

@@ -88,9 +88,9 @@ body {
 
 #sublist {
   padding-top:1em;
+  padding-right:1em;
   width:50%;
-  margin-left:25%;
-  margin-right:25%;
+  margin: auto;
 }
 ​
 main { 
@@ -101,8 +101,8 @@ main {
 
 #lastlist {
   width:50%;
-  margin-left:25%;
-  margin-right:25%;
+  margin: auto;
+  padding-right:1em;
   font-family: 'Kode Mono', monospace;
   font-size: 18px;
   font-style: normal;
