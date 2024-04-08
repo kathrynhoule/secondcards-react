@@ -8,6 +8,7 @@ import milotic from '../cards/milotic.png';
 import rayquaza from '../cards/rayquaza.png';
 import rotom from '../cards/rotom.png';
 import shaymin from '../cards/shaymin.png';
+import darklordmorningstar from '../cards/darklordmorningstar.png';
 
 const ProductGallery = () => {
     const images = [
@@ -18,7 +19,8 @@ const ProductGallery = () => {
      milotic,
      rayquaza,
      rotom,
-     shaymin
+     shaymin,
+     darklordmorningstar,
 ];
 
     return (
