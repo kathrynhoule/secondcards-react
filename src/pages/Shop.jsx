@@ -4,7 +4,7 @@ import ProductGallery from '../components/ProductGallery';
 import SearchBar from '../components/SearchBar';
 import '../components/SearchBar.css';
 import {products} from '../data/ProductData';
-import ProductCard from '../components/ProductCard';
+import ProductList from '../components/ProductList';
 
 function Shop() {
 
@@ -21,11 +21,7 @@ function Shop() {
                </div>
                <div>
                <Filter />
-               <div className="productlist">
-                    {filteredProducts.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                    ))}
-               </div>
+               <ProductList products={filteredProducts} />
                </div>
                <ProductGallery />
           </div>

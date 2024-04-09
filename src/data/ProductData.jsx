@@ -1,3 +1,13 @@
+import ghostrickalucard from '../cards/ghostrickalucard.png';
+import ghostrickfestival from '../cards/ghostrickfestival.png';
+import illumi from '../cards/illumi.png';
+import machi from '../cards/machi.png';
+import milotic from '../cards/milotic.png';
+import rayquaza from '../cards/rayquaza.png';
+import rotom from '../cards/rotom.png';
+import shaymin from '../cards/shaymin.png';
+import darklordmorningstar from '../cards/darklordmorningstar.png';
+
 export const products = [
      {
        id: 1,
@@ -9,7 +19,7 @@ export const products = [
        rarity: 'Shatterfoil Rare',
        price: 7.99,
        description: '',
-       image: '../cards/ghostrickalucard.png',
+       image: ghostrickalucard,
      },
      {
       id: 2,
@@ -21,7 +31,7 @@ export const products = [
       rarity: 'Common',
       price: 0.99,
       description: '',
-      image: '../cards/ghostrickfestival.png',
+      image: ghostrickfestival,
      },
      {
       id: 3,
@@ -33,7 +43,7 @@ export const products = [
       rarity: 'Super Rare++',
       price: 0.0,
       description: '',
-      image: '../cards/illumi.png',
+      image: illumi,
      },
      {
       id: 4,
@@ -45,7 +55,7 @@ export const products = [
       rarity: '',
       price: 0.0,
       description: '',
-      image: '../cards/machi.png',
+      image: machi,
      },
      {
       id: 5,
@@ -57,7 +67,7 @@ export const products = [
       rarity: '',
       price: 0.0,
       description: '',
-      image: '../cards/milotic.png',
+      image: milotic,
      },
      {
       id: 6,
@@ -69,7 +79,7 @@ export const products = [
       rarity: '',
       price: 0.0,
       description: '',
-      image: '../cards/rayquaza.png',
+      image: rayquaza,
      },
      {
       id: 7,
@@ -81,7 +91,7 @@ export const products = [
       rarity: '',
       price: 0.0,
       description: '',
-      image: '../cards/rotom.png',
+      image: rotom,
      },
      {
       id: 8,
@@ -93,7 +103,7 @@ export const products = [
       rarity: '',
       price: 0.0,
       description: '',
-      image: '../cards/shaymin.png',
+      image: shaymin,
      },
      {
       id: 9,
@@ -105,7 +115,7 @@ export const products = [
       rarity: 'Secret Rare',
       price: 3.99,
       description: '',
-      image: '../cards/darklordmorningstar.png',
+      image: darklordmorningstar,
      },
     //  {
     //   id: 10,
