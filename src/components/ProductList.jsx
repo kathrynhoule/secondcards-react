@@ -6,10 +6,11 @@ const ProductList = ({ products }) => {
      return (
        <div className="gallery">
          {products.map((product) => (
-           <ProductCard key={product.id} product={product} className="image-container" />
+           <ProductCard key={product.id} product={product} />
          ))}
        </div>
      );
    };
 
 export default ProductList;
+
