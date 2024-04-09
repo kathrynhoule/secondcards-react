@@ -6,30 +6,48 @@ import '../components/SearchBar.css';
 import {products} from '../data/ProductData';
 //import ProductList from '../components/ProductList';
 
-function Shop() {
+// function Shop() {
 
-     const [filteredProducts, setFilteredProducts] = useState([]);
+//      const [filteredProducts, setFilteredProducts] = useState([]);
 
-     const handleSearch = (filteredProducts) => {
-          setFilteredProducts(filteredProducts);
-     };
+//      const handleSearch = (filteredProducts) => {
+//           setFilteredProducts(filteredProducts);
+//      };
 
-     return (
-          <div>
-               <div className = "searchbarcontainer">
-               <SearchBar products = {products} onSearch= {handleSearch} />
-               <div>
-               <ul>
-                    {filteredProducts.map((product) => (
-                    <li key={product.id}>{product.name}</li>
-                    ))}
-               </ul>
-               </div>
-               </div>
-               <Filter />
-               <ProductGallery />
-          </div>
-     );
-}
+//      return (
+//           <div>
+//                <div className = "searchbarcontainer">
+//                <SearchBar products = {products} onSearch= {handleSearch} />
+//                <div>
+//                <ul>
+//                     {filteredProducts.map((product) => (
+//                     <li key={product.id}>{product.name}</li>
+//                     ))}
+//                </ul>
+//                </div>
+//                </div>
+//                <Filter />
+//                <ProductGallery />
+//           </div>
+//      );
+// }
    
-export default Shop;
+// export default Shop;
+
+function Shop() {
+     return (
+                    <div>
+                         <div className = "searchbarcontainer">
+                         </div>
+                         <div>
+                         <ul>
+                              {filteredProducts.map((product) => (
+                              <li key={product.id}>{product.name}</li>
+                              ))}
+                         </ul>
+                         </div>
+                         <Filter />
+                         <ProductGallery />
+                    </div>
+               );
+          }
