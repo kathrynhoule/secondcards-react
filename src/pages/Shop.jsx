@@ -4,6 +4,7 @@ import ProductGallery from '../components/ProductGallery';
 import SearchBar from '../components/SearchBar';
 import '../components/SearchBar.css';
 import {products} from '../data/ProductData';
+//import ProductList from '../components/ProductList';
 
 function Shop() {
 

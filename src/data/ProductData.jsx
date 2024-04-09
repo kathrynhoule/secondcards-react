@@ -1,8 +1,8 @@
-export const products = [
+const products = [
      {
        id: 1,
        name: 'Ghostrick Alucard',
-       category: ['Category A',],
+       category: 'Category A',
        producttype: 'Single',
        franchise: 'Yu-Gi-Oh!',
        game: 'Yu-Gi-Oh! Trading Card Game',
@@ -14,7 +14,7 @@ export const products = [
      {
       id: 2,
       name: 'Ghostrick Festival',
-      category: ['Category A',],
+      category: 'Category A',
       producttype: 'Single',
       franchise: 'Yu-Gi-Oh!',
       game: 'Yu-Gi-Oh! Trading Card Game',
@@ -26,7 +26,7 @@ export const products = [
      {
       id: 3,
       name: 'Illumi',
-      category: ['Category A',],
+      category: 'Category A',
       producttype: 'Single',
       franchise: 'Hunter x Hunter',
       game: 'Union Arena',
@@ -38,7 +38,7 @@ export const products = [
      {
       id: 4,
       name: 'Machi',
-      category: ['Category A',],
+      category: 'Category A',
       producttype: 'Single',
       franchise: 'Hunter x Hunter',
       game: 'Carddass',
@@ -50,7 +50,7 @@ export const products = [
      {
       id: 5,
       name: 'Milotic',
-      category: ['Category A',],
+      category: 'Category A',
       producttype: 'Single',
       franchise: '',
       game: '',
@@ -62,7 +62,7 @@ export const products = [
      {
       id: 6,
       name: 'Rayquaza',
-      category: ['Category A',],
+      category: 'Category A',
       producttype: 'Single',
       franchise: 'Pokemon',
       game: 'Pokemon Trading Card Game',
@@ -74,7 +74,7 @@ export const products = [
      {
       id: 7,
       name: 'Rotom',
-      category: ['Category A',],
+      category: 'Category A',
       producttype: 'Single',
       franchise: 'Pokemon',
       game: 'Pokemon Trading Card Game',
@@ -86,7 +86,7 @@ export const products = [
      {
       id: 8,
       name: 'Shaymin',
-      category: ['Category A',],
+      category: 'Category A',
       producttype: 'Single',
       franchise: 'Pokemon',
       game: 'Pokemon Trading Card Game',
@@ -98,7 +98,7 @@ export const products = [
      {
       id: 9,
       name: 'Darklord Morningstar',
-      category: ['Category A',],
+      category: 'Category A',
       producttype: 'Single',
       franchise: 'Yu-Gi-Oh!',
       game: 'Yu-Gi-Oh! Trading Card Game',
@@ -144,3 +144,5 @@ export const products = [
     //   image: '../cards/shaymin.png',
     //  },
    ];
+
+   export default products;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Product = ({product}) => (
+const Product = ({ product }) => (
      <div>
           <img src={product.image} alt={product.name} />
           <h2>{product.name}</h2>
@@ -9,7 +9,6 @@ const Product = ({product}) => (
           <p>Game: {product.game}</p>
           <p>Rarity: {product.rarity}</p>
           <p>Price: ${product.price}</p>
-          <p>Description: {product.description}</p>
      </div>
 );
 

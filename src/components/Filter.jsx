@@ -9,7 +9,7 @@ function Filter() {
                   <li id="boxes"><a href="">Boxes</a></li>
                   <li id="all"><a href="">All</a></li>
               </ul>
-              <div class="dropdown"><p>Filter by</p> <img id="arrow" src={arrow} alt="click to open menu" width="20" height="20" />
+              <div className="dropdown"><p>Filter by</p> <img id="arrow" src={arrow} alt="click to open menu" width="20" height="20" />
               </div>
               <ul id="lastlist">
                   <li>Filter by:</li>

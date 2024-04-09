@@ -14,7 +14,7 @@ function SearchBar ({products, onSearch}) {
      };
 
      return (
-          <div class = "inputwrap">
+          <div className = "inputwrap">
                <FaSearch id = "searchicon" />
                <input
                type="text"
