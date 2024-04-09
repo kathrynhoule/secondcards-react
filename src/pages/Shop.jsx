@@ -4,50 +4,32 @@ import ProductGallery from '../components/ProductGallery';
 import SearchBar from '../components/SearchBar';
 import '../components/SearchBar.css';
 import {products} from '../data/ProductData';
-//import ProductList from '../components/ProductList';
-
-// function Shop() {
-
-//      const [filteredProducts, setFilteredProducts] = useState([]);
-
-//      const handleSearch = (filteredProducts) => {
-//           setFilteredProducts(filteredProducts);
-//      };
-
-//      return (
-//           <div>
-//                <div className = "searchbarcontainer">
-//                <SearchBar products = {products} onSearch= {handleSearch} />
-//                <div>
-//                <ul>
-//                     {filteredProducts.map((product) => (
-//                     <li key={product.id}>{product.name}</li>
-//                     ))}
-//                </ul>
-//                </div>
-//                </div>
-//                <Filter />
-//                <ProductGallery />
-//           </div>
-//      );
-// }
-   
-// export default Shop;
+import ProductCard from '../components/ProductCard';
 
 function Shop() {
+
+     const [filteredProducts, setFilteredProducts] = useState([]);
+
+     const handleSearch = (filteredProducts) => {
+          setFilteredProducts(filteredProducts);
+     };
+
      return (
-                    <div>
-                         <div className = "searchbarcontainer">
-                         </div>
-                         <div>
-                         <ul>
-                              {filteredProducts.map((product) => (
-                              <li key={product.id}>{product.name}</li>
-                              ))}
-                         </ul>
-                         </div>
-                         <Filter />
-                         <ProductGallery />
-                    </div>
-               );
-          }
+          <div>
+               <div className = "searchbarcontainer">
+               <SearchBar products = {products} onSearch= {handleSearch} />
+               </div>
+               <div>
+               <Filter />
+               <div className="productlist">
+                    {filteredProducts.map((product) => (
+                    <ProductCard key={product.id} product={product} />
+                    ))}
+               </div>
+               </div>
+               <ProductGallery />
+          </div>
+     );
+}
+   
+export default Shop;
