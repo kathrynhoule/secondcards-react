@@ -1,4 +1,4 @@
-const products = [
+export const products = [
      {
        id: 1,
        name: 'Ghostrick Alucard',
@@ -144,5 +144,3 @@ const products = [
     //   image: '../cards/shaymin.png',
     //  },
    ];
-
-   export default products;
