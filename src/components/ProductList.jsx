@@ -4,9 +4,9 @@ import ProductCard from './ProductCard';
 
 const ProductList = ({ products }) => {
      return (
-       <div className="productlist">
+       <div className="gallery">
          {products.map((product) => (
-           <ProductCard key={product.id} product={product} />
+           <ProductCard key={product.id} product={product} className="image-container" />
          ))}
        </div>
      );

@@ -23,7 +23,6 @@ function Shop() {
                <Filter />
                <ProductList products={filteredProducts} />
                </div>
-               <ProductGallery />
           </div>
      );
 }
