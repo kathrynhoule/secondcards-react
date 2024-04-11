@@ -2,7 +2,9 @@ import React from 'react';
 
 function Price() {
      return (
-          <div></div>
+          <div>
+               <h3>Price</h3>
+          </div>
         );
 }
    

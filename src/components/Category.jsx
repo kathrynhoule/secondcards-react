@@ -2,7 +2,9 @@ import React from 'react';
 
 function Category() {
      return (
-          <div></div>
+          <div>
+               <h3>Category</h3>
+          </div>
         );
 }
    

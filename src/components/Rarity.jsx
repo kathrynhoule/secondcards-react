@@ -2,7 +2,9 @@ import React from 'react';
 
 function Rarity() {
      return (
-          <div></div>
+          <div>
+               <h3>Rarity</h3>
+          </div>
         );
 }
    
