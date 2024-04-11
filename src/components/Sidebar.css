@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 .sidebar {
      width: 20%;
      display: flex;
@@ -8,4 +10,8 @@
 
 h3 {
      color: #EBEBEB;
+     font-family: 'Kode Mono', monospace;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
 }

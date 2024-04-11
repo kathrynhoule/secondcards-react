@@ -3,7 +3,7 @@ import React from 'react';
 function Rarity() {
      return (
           <div>
-               <h3>Rarity</h3>
+               <h3>RARITY</h3>
           </div>
         );
 }

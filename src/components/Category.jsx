@@ -18,7 +18,7 @@ function Category() {
 
      return (
           <div>
-               <h3>Category</h3>
+               <h3>CATEGORY</h3>
                <RadioButtons
                     name="myOptions"
                     options={options}

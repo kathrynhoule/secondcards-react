@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Game.css';
 import RadioButtons from './RadioButton';
 
 function Game() {
@@ -19,7 +18,7 @@ function Game() {
 
      return (
           <div>
-               <h3>Game</h3>
+               <h3>GAME</h3>
                <RadioButtons
                     name="myOptions"
                     options={options}
