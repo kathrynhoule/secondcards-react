@@ -1,10 +1,18 @@
 import React from 'react';
 import './Sidebar.css';
+import Game from './Game';
+import Category from './Category';
+import Price from './Price';
+import Rarity from './Rarity';
 
 function Sidebar() {
      return (
-          <div className="sidebar">
-          </div>
+          <section className="sidebar">
+               <Game />
+               <Category />
+               <Price />
+               <Rarity />
+          </section>
         );
 }
    
