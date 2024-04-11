@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Shop.css';
 import Filter from '../components/Filter';
 import SearchBar from '../components/SearchBar';
 import '../components/SearchBar.css';
