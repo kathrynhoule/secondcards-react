@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Shop.css';
-import Filter from '../components/Filter';
 import SearchBar from '../components/SearchBar';
 import '../components/SearchBar.css';
 import {products} from '../data/ProductData';
 import ProductList from '../components/ProductList';
+import Sidebar from '../components/Sidebar';
 
 function Shop() {
 
@@ -24,7 +24,7 @@ function Shop() {
                <SearchBar products = {products} onSearch= {handleSearch} />
                </div>
                <div className="shop">
-               <Filter />
+               <Sidebar />
                <ProductList products={filteredProducts} />
                </div>
           </div>
