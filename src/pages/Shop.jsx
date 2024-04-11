@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Filter from '../components/Filter';
-import ProductGallery from '../components/ProductGallery';
 import SearchBar from '../components/SearchBar';
 import '../components/SearchBar.css';
 import {products} from '../data/ProductData';
@@ -9,6 +8,10 @@ import ProductList from '../components/ProductList';
 function Shop() {
 
      const [filteredProducts, setFilteredProducts] = useState([]);
+
+     useEffect(() => {
+          setFilteredProducts(products);
+     }, []);
 
      const handleSearch = (filteredProducts) => {
           setFilteredProducts(filteredProducts);
