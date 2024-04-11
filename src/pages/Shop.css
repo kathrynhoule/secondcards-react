@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+main {
+     align-items: center;
+}
+
 .shop {
      display: flex;
-   }
+}
 
-   #arrow {
+#arrow {
      padding-left:1em;
-   }
+}
    
    #singles {
      font-family: 'Kode Mono', monospace;
@@ -51,12 +57,6 @@
      padding-right:1em;
      width:50%;
      margin: auto;
-   }
-   ​
-   main { 
-     display: flex;
-     align-items: center;
-     padding: 3em 5em 5em 5em;
    }
    
    #lastlist {

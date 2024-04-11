@@ -23,7 +23,7 @@ function Shop() {
                <div className = "searchbarcontainer">
                <SearchBar products = {products} onSearch= {handleSearch} />
                </div>
-               <div>
+               <div className="shop">
                <Filter />
                <ProductList products={filteredProducts} />
                </div>
