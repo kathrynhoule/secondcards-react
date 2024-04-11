@@ -6,6 +6,7 @@ main {
 
 .shop {
      display: flex;
+     padding-top: 3em;
 }
 
 #arrow {
