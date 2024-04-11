@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Game.css';
 import RadioButtons from './RadioButton';
 
 function Game() {
@@ -10,6 +11,7 @@ function Game() {
      };
 
      const options = [
+          { value: 'all', label: 'All' },
           { value: 'yugioh', label: 'Yu-Gi-Oh! TCG' },
           { value: 'unionarena', label: 'Union Arena' },
           { value: 'pokemon', label: 'Pokemon TCG' },
