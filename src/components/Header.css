@@ -9,43 +9,43 @@
      padding-left: 2em;
      padding-right: 2em;
      padding-bottom: 1em;
-   }
+}
 
-a {
+.header a {
      text-decoration: none;
      color: inherit;
- }
+}
    
-   h1 {
+.header h1 {
      font-family: 'Kode Mono', monospace;
      font-weight: 700;
      font-size: 24px;
      color: #EBEBEB;
-   }
+}
    
-   #navbarlist {
+#navbarlist {
      font-family: 'Kode Mono', monospace;
      font-size: 18px;
      font-style: normal;
      font-weight: 400;
      line-height: normal;
      padding: 0 15px;
-   }
+}
    
-   ul {
+.header ul {
      display: flex;
      width: 100%;
      justify-content: space-around;
      list-style-type: none;
      font-size: 24px;
      margin: 0;
-   }
+}
    
-  li {
+.header li {
      padding-left:1em;
      padding-right:1em;
      margin: 0;
-  }
+}
    
    #about {
      color:#129490;

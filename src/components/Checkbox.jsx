@@ -5,7 +5,7 @@ const Checkbox = ({ name, options, chosenOption, onChange }) => {
   return (
     <div>
       {options.map(option => (
-        <div key={option.value}>
+        <div key={option.value} className="checkboxcontainer">
           <input
             type="checkbox"
             id={option.value}

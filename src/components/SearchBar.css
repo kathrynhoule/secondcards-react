@@ -22,7 +22,7 @@
      box-shadow: 0px 0px 10px #484847;
 }
 
-input {
+.inputwrap input {
      background-color: transparent;
      border: none;
      height: 100%;
@@ -34,7 +34,7 @@ input {
      font-weight: 400;
 }
 
-input:focus {
+.inputwrap input:focus {
      outline: none;
 }
 
