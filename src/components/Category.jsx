@@ -3,14 +3,13 @@ import Checkbox from './Checkbox';
 
 function Category() {
 
-     const [chosenOption, setChosenOption] = useState('allcategory');
+     const [chosenOption, setChosenOption] = useState('');
         
      const handleOptionChange = (event) => {
             setChosenOption(event.target.value);
      };
 
      const options = [
-          { value: 'allcategory', label: 'All' },
           { value: 'singles', label: 'Singles' },
           { value: 'packs', label: 'Packs' },
           { value: 'boxes', label: 'Boxes' },

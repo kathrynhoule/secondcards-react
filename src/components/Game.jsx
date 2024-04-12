@@ -3,14 +3,13 @@ import Checkbox from './Checkbox';
 
 function Game() {
 
-     const [chosenOption, setChosenOption] = useState('allgame');
+     const [chosenOption, setChosenOption] = useState('');
         
      const handleOptionChange = (event) => {
             setChosenOption(event.target.value);
      };
 
      const options = [
-          { value: 'allgame', label: 'All' },
           { value: 'yugioh', label: 'Yu-Gi-Oh! TCG' },
           { value: 'unionarena', label: 'Union Arena' },
           { value: 'pokemon', label: 'Pokemon TCG' },
