@@ -4,6 +4,7 @@ import Game from './Game';
 import Category from './Category';
 import Price from './Price';
 import Rarity from './Rarity';
+import ReleaseDate from './ReleaseDate';
 
 function Sidebar() {
      return (
@@ -12,6 +13,7 @@ function Sidebar() {
                <Category />
                <Price />
                <Rarity />
+               <ReleaseDate />
           </section>
         );
 }
