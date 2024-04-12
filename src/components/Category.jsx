@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import RadioButtons from './RadioButton';
+import Checkbox from './Checkbox';
 
 function Category() {
 
-     const [chosenOption, setChosenOption] = useState('option1');
+     const [chosenOption, setChosenOption] = useState('allcategory');
         
      const handleOptionChange = (event) => {
             setChosenOption(event.target.value);
      };
 
      const options = [
-          { value: 'All', label: 'All' },
+          { value: 'allcategory', label: 'All' },
           { value: 'singles', label: 'Singles' },
           { value: 'packs', label: 'Packs' },
           { value: 'boxes', label: 'Boxes' },
@@ -19,10 +19,10 @@ function Category() {
      return (
           <div>
                <h3>CATEGORY</h3>
-               <RadioButtons
+               <Checkbox
                     name="myOptions"
                     options={options}
-                    selectedOption={chosenOption}
+                    chosenOption={chosenOption}
                     onChange={handleOptionChange}
                />
           </div>

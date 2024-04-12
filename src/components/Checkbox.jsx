@@ -1,13 +1,13 @@
 import React from 'react';
-import './RadioButton.css';
+import './Checkbox.css';
 
-const RadioButtons = ({ name, options, chosenOption, onChange }) => {
+const Checkbox = ({ name, options, chosenOption, onChange }) => {
   return (
     <div>
       {options.map(option => (
         <div key={option.value}>
           <input
-            type="radio"
+            type="checkbox"
             id={option.value}
             name={name}
             value={option.value}
@@ -21,4 +21,4 @@ const RadioButtons = ({ name, options, chosenOption, onChange }) => {
   );
 };
 
-export default RadioButtons;
+export default Checkbox;

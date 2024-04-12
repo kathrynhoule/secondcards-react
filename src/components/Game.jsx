@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import RadioButtons from './RadioButton';
+import Checkbox from './Checkbox';
 
 function Game() {
 
-     const [chosenOption, setChosenOption] = useState('option1');
+     const [chosenOption, setChosenOption] = useState('allgame');
         
      const handleOptionChange = (event) => {
             setChosenOption(event.target.value);
      };
 
      const options = [
-          { value: 'all', label: 'All' },
+          { value: 'allgame', label: 'All' },
           { value: 'yugioh', label: 'Yu-Gi-Oh! TCG' },
           { value: 'unionarena', label: 'Union Arena' },
           { value: 'pokemon', label: 'Pokemon TCG' },
@@ -19,10 +19,10 @@ function Game() {
      return (
           <div>
                <h3>GAME</h3>
-               <RadioButtons
+               <Checkbox
                     name="myOptions"
                     options={options}
-                    selectedOption={chosenOption}
+                    chosenOption={chosenOption}
                     onChange={handleOptionChange}
                />
           </div>
