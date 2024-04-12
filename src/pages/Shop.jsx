@@ -8,14 +8,24 @@ import Sidebar from '../components/Sidebar';
 
 function Shop() {
 
-     const [filteredProducts, setFilteredProducts] = useState([]);
+     const [searchFilteredProducts, setSearchFilteredProducts] = useState([]);
+     const [gameFilteredProducts, setGameFilteredProducts] = useState([]);
 
      useEffect(() => {
-          setFilteredProducts(products);
+          setSearchFilteredProducts(products);
      }, []);
 
      const handleSearch = (filteredProducts) => {
-          setFilteredProducts(filteredProducts);
+          setSearchFilteredProducts(filteredProducts);
+     };
+
+     const handleGameFilter = (selectedGames) => {
+          if (selectedGames.length === 0) {
+               setGameFilteredProducts(searchFilteredProducts);
+          } else {
+               const filtered = searchFilteredProducts.filter(product => selectedGames.includes(product.game));
+               setGameFilteredProducts(filtered);
+          }
      };
 
      return (
@@ -24,8 +34,8 @@ function Shop() {
                <SearchBar products = {products} onSearch= {handleSearch} />
                </div>
                <div className="shop">
-               <Sidebar />
-               <ProductList products={filteredProducts} />
+               <Sidebar onGameFilterChange={handleGameFilter} />
+               <ProductList products={gameFilteredProducts.length > 0 ? gameFilteredProducts : searchFilteredProducts} />
                </div>
           </div>
      );
