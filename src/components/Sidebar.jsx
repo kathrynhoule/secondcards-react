@@ -1,15 +1,16 @@
 import React from 'react';
 import './Sidebar.css';
 import Game from './Game';
-// import Category from './Category';
+import Type from './Type';
 // import Price from './Price';
 // import Rarity from './Rarity';
 // import ReleaseDate from './ReleaseDate';
 
-function Sidebar({ onGameFilterChange }) {
+function Sidebar({ onGameFilterChange,  onTypeFilterChange}) {
      return (
           <section className="sidebar">
                <Game onGameSelectionChange={onGameFilterChange} />
+               <Type onTypeSelectionChange={onTypeFilterChange} />
           </section>
      );
 }
