@@ -6,12 +6,12 @@ import Price from './Price';
 // import Rarity from './Rarity';
 // import ReleaseDate from './ReleaseDate';
 
-function Sidebar({ onGameFilterChange,  onTypeFilterChange}) {
+function Sidebar({ onGameFilterChange,  onTypeFilterChange, onPriceFilterChange}) {
      return (
           <section className="sidebar">
                <Game onGameSelectionChange={onGameFilterChange} />
                <Type onTypeSelectionChange={onTypeFilterChange} />
-               <Price />
+               <Price onPriceSelectionChange={onPriceFilterChange}/>
           </section>
      );
 }
