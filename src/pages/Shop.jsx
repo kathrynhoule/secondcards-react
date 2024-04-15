@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Shop.css';
 import SearchBar from '../components/SearchBar';
-import '../components/SearchBar.css';
 import {products} from '../data/ProductData';
 import ProductList from '../components/ProductList';
 import Sidebar from '../components/Sidebar';
@@ -10,6 +9,7 @@ function Shop() {
 
      const [searchFilteredProducts, setSearchFilteredProducts] = useState([]);
      const [gameFilteredProducts, setGameFilteredProducts] = useState([]);
+     const [typeFilteredProducts, setTypeFilteredProducts] = useState([]);
 
      useEffect(() => {
           setSearchFilteredProducts(products);
@@ -28,14 +28,23 @@ function Shop() {
           }
      };
 
+     const handleTypeFilter = (selectedTypes) => {
+          if (selectedTypes.length === 0) {
+               setTypeFilteredProducts(searchFilteredProducts);
+          } else {
+               const filtered = searchFilteredProducts.filter(product => selectedTypes.includes(product.type));
+               setTypeFilteredProducts(filtered);
+          }
+     };
+
      return (
           <div>
                <div className = "searchbarcontainer">
-               <SearchBar products = {products} onSearch= {handleSearch} />
+                    <SearchBar products = {products} onSearch= {handleSearch} />
                </div>
                <div className="shop">
-               <Sidebar onGameFilterChange={handleGameFilter} />
-               <ProductList products={gameFilteredProducts.length > 0 ? gameFilteredProducts : searchFilteredProducts} />
+                    <Sidebar onGameFilterChange={handleGameFilter} onTypeFilterChange={handleTypeFilter}/>
+                    <ProductList products={gameFilteredProducts.length > 0 ? gameFilteredProducts : typeFilteredProducts.length > 0 ? typeFilteredProducts : searchFilteredProducts} />
                </div>
           </div>
      );
