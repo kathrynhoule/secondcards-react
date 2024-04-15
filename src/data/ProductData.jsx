@@ -1,11 +1,11 @@
-import ghostrickalucard from '../cards/ghostrickalucard.png';
-import ghostrickfestival from '../cards/ghostrickfestival.png';
-import illumi from '../cards/illumi.png';
-import milotic from '../cards/milotic.png';
-import rayquaza from '../cards/rayquaza.png';
-import rotom from '../cards/rotom.png';
-import shaymin from '../cards/shaymin.png';
-import darklordmorningstar from '../cards/darklordmorningstar.png';
+import ghostrickalucard from '../productimages/ghostrickalucard.png';
+import ghostrickfestival from '../productimages/ghostrickfestival.png';
+import illumi from '../productimages/illumi.png';
+import milotic from '../productimages/milotic.png';
+import rayquaza from '../productimages/rayquaza.png';
+import rotom from '../productimages/rotom.png';
+import shaymin from '../productimages/shaymin.png';
+import darklordmorningstar from '../productimages/darklordmorningstar.png';
 
 export const products = [
      {

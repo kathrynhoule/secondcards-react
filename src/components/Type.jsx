@@ -17,7 +17,7 @@ function Type({ onTypeSelectionChange }) {
      const options = [
           { value: 'single', label: 'Single' },
           { value: 'pack', label: 'Pack' },
-          { value: 'box', label: 'Box' },
+          { value: 'deck', label: 'Deck' },
      ];
 
      return (
