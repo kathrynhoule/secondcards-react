@@ -6,6 +6,9 @@ import rayquaza from '../productimages/rayquaza.png';
 import rotom from '../productimages/rotom.png';
 import shaymin from '../productimages/shaymin.png';
 import darklordmorningstar from '../productimages/darklordmorningstar.png';
+import cyberselink from '../productimages/cyberselink.png';
+import invasionvengeance from '../productimages/invasionvengeance.png';
+import wildsurvivors from '../productimages/wildsurvivors.png';
 
 export const products = [
      {
@@ -104,40 +107,40 @@ export const products = [
       description: '',
       image: darklordmorningstar,
      },
-    //  {
-    //   id: 9,
-    //   name: 'Shaymin',
-    //   category: ['Category A',],
-    //   type: 'single',
-    //   franchise: 'Pokemon',
-    //   game: 'Pokemon Trading Card Game',
-    //   rarity: '',
-    //   price: 0.0,
-    //   description: '',
-    //   image: '../cards/shaymin.png',
-    //  },
-    //  {
-    //   id: 10,
-    //   name: 'Shaymin',
-    //   category: ['Category A',],
-    //   type: 'single',
-    //   franchise: 'Pokemon',
-    //   game: 'Pokemon Trading Card Game',
-    //   rarity: '',
-    //   price: 0.0,
-    //   description: '',
-    //   image: '../cards/shaymin.png',
-    //  },
-    //  {
-    //   id: 11,
-    //   name: 'Shaymin',
-    //   category: ['Category A',],
-    //   type: 'single',
-    //   franchise: 'Pokemon',
-    //   game: 'Pokemon Trading Card Game',
-    //   rarity: '',
-    //   price: 0.0,
-    //   description: '',
-    //   image: '../cards/shaymin.png',
-    //  },
+     {
+      id: 9,
+      name: 'Cyberse Link',
+      category: 'Category A',
+      type: 'deck',
+      franchise: 'Yu-Gi-Oh!',
+      game: 'yugioh',
+      rarity: '',
+      price: 0.0,
+      description: '',
+      image: cyberselink,
+     },
+     {
+      id: 10,
+      name: 'Invasion: Vengeance',
+      category: 'Category A',
+      type: 'pack',
+      franchise: 'Yu-Gi-Oh!',
+      game: 'yugioh',
+      rarity: '',
+      price: 0.0,
+      description: '',
+      image: invasionvengeance,
+     },
+     {
+      id: 11,
+      name: 'Wild Survivors',
+      category: 'Category A',
+      type: 'pack',
+      franchise: 'Yu-Gi-Oh!',
+      game: 'yugioh',
+      rarity: '',
+      price: 0.0,
+      description: '',
+      image: wildsurvivors,
+     },
    ];
