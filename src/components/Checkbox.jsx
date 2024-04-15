@@ -1,7 +1,7 @@
 import React from 'react';
 import './Checkbox.css';
 
-const Checkbox = ({ name, options, chosenOption, onChange }) => {
+const Checkbox = ({ name, options, selectedOptions = [], onChange }) => {
   return (
     <div>
       {options.map(option => (
@@ -11,7 +11,7 @@ const Checkbox = ({ name, options, chosenOption, onChange }) => {
             id={option.value}
             name={name}
             value={option.value}
-            checked={chosenOption === option.value}
+            checked={selectedOptions.includes(option.value)}
             onChange={onChange}
           />
           <label htmlFor={option.value}>{option.label}</label>

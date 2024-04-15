@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import Checkbox from './Checkbox';
 
-function Game() {
+function Game({ onGameSelectionChange }) {
 
-     const [chosenOption, setChosenOption] = useState('');
-        
+     const [selectedGames, setSelectedGames] = useState([]);
+
      const handleOptionChange = (event) => {
-            setChosenOption(event.target.value);
+          const value = event.target.value;
+          setSelectedGames(current => {
+               const newSelection = current.includes(value) ? current.filter(item => item !== value) : [...current, value];
+               onGameSelectionChange(newSelection);
+               return newSelection;
+          });
      };
 
      const options = [
@@ -19,9 +24,9 @@ function Game() {
           <div>
                <h3>GAME</h3>
                <Checkbox
-                    name="myOptions"
+                    name="gameOptions"
                     options={options}
-                    chosenOption={chosenOption}
+                    selectedOptions={selectedGames}
                     onChange={handleOptionChange}
                />
           </div>
