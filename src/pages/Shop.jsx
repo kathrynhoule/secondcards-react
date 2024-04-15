@@ -20,23 +20,19 @@ function Shop() {
      };
 
      const handleGameFilter = (selectedGames) => {
-          if (selectedGames.length === 0) {
-               setGameFilteredProducts(searchFilteredProducts);
-          } else {
-               const filtered = searchFilteredProducts.filter(product => selectedGames.includes(product.game));
-               setGameFilteredProducts(filtered);
-          }
-     };
-
+          const filteredByGame = selectedGames.length === 0 ? searchFilteredProducts : searchFilteredProducts.filter(product => selectedGames.includes(product.game));
+          setGameFilteredProducts(filteredByGame);
+        };
+      
      const handleTypeFilter = (selectedTypes) => {
-          if (selectedTypes.length === 0) {
-               setTypeFilteredProducts(searchFilteredProducts);
-          } else {
-               const filtered = searchFilteredProducts.filter(product => selectedTypes.includes(product.type));
-               setTypeFilteredProducts(filtered);
-          }
+          const filteredByType = selectedTypes.length === 0 ? searchFilteredProducts : searchFilteredProducts.filter(product => selectedTypes.includes(product.type));
+          setTypeFilteredProducts(filteredByType);
      };
 
+     const combinedFilteredProducts = gameFilteredProducts.filter(product =>
+          typeFilteredProducts.includes(product)
+     );
+        
      return (
           <div>
                <div className = "searchbarcontainer">
@@ -44,7 +40,7 @@ function Shop() {
                </div>
                <div className="shop">
                     <Sidebar onGameFilterChange={handleGameFilter} onTypeFilterChange={handleTypeFilter}/>
-                    <ProductList products={gameFilteredProducts.length > 0 ? gameFilteredProducts : typeFilteredProducts.length > 0 ? typeFilteredProducts : searchFilteredProducts} />
+                    <ProductList products={combinedFilteredProducts.length > 0 ? combinedFilteredProducts : searchFilteredProducts} />
                </div>
           </div>
      );
