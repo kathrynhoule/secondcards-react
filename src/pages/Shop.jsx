@@ -29,8 +29,9 @@ function Shop() {
           setTypeFilteredProducts(filteredByType);
      };
 
-     const combinedFilteredProducts = gameFilteredProducts.filter(product =>
-          typeFilteredProducts.includes(product)
+     const combinedFilteredProducts = searchFilteredProducts.filter(product =>
+          (gameFilteredProducts.length === 0 || gameFilteredProducts.includes(product)) &&
+          (typeFilteredProducts.length === 0 || typeFilteredProducts.includes(product))
      );
         
      return (
