@@ -7,6 +7,7 @@ const ProductCard = ({product}) => {
           <img src={product.image} alt={product.name} />
           <h2>{product.name}</h2>
           <p className="productprice">Price: ${product.price}</p>
+          <button className ="addtocartbttn">Add to Cart</button>
      </div>
 );
 }
