@@ -30,35 +30,36 @@ function Shop() {
           setTypeFilteredProducts(filteredByType);
      };
 
-     // const handlePriceFilter = (selectedPrices) => {
-     //      const filteredByPrice = selectedPrices.length === 0 ? searchFilteredProducts : searchFilteredProducts.filter(product => selectedPrices.includes(product.type));
-     //      setPriceFilteredProducts(filteredByPrice);
-     // };
-
      const handlePriceFilter = (selectedPrices) => {
-          const filteredByPrice = selectedPrices.length === 0 ? searchFilteredProducts : searchFilteredProducts.filter(product => {
-               const [minPrice, maxPrice] = selectedPrices.split('-').map(parseFloat);
-          if (selectedPrices === '50+') {
-              return product.price >= 50;
-               } 
-               else if (selectedPrices === '0-10') {
-                    return product.price >= 0 && product.price < 10;
-               } 
-               else if (selectedPrices === '10-20') {
-                    return product.price >= 10 && product.price < 20;
-               } 
-               else if (selectedPrices === '20-30') {
-                    return product.price >= 20 && product.price < 30;
-               } 
-               else if (selectedPrices === '30-40') {
-                    return product.price >= 30 && product.price < 40;
-               } 
-               else if (selectedPrices === '40-50') {
-                    return product.price >= 40 && product.price < 50;
+          const filteredByPrice = searchFilteredProducts.filter(product => {
+              if (selectedPrices.length === 0) {
+                  return true;
+              } else {
+                  return selectedPrices.some(range => {
+                      const [minPrice, maxPrice] = range.split('-').map(parseFloat);
+                         if (range === '50+') {
+                              return product.price >= 50;
+                         } 
+                         else if (range === '0-10') {
+                              return product.price >= 0 && product.price <= 10;
+                         } 
+                         else if (range === '10-20') {
+                              return product.price >= 10 && product.price <= 20;
+                         } 
+                         else if (range === '20-30') {
+                              return product.price >= 20 && product.price <= 30;
+                         } 
+                         else if (range === '30-40') {
+                              return product.price >= 30 && product.price <= 40;
+                         } 
+                         else if (range === '40-50') {
+                              return product.price >= 40 && product.price <= 50;
+                         }
+                    });
                }
           });
           setPriceFilteredProducts(filteredByPrice);
-          };
+     };
         
 
      const combinedFilteredProducts = searchFilteredProducts.filter(product =>
