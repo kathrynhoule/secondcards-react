@@ -32,9 +32,10 @@ function Shop() {
 
      const handlePriceFilter = (selectedPrices) => {
           const filteredByPrice = searchFilteredProducts.filter(product => {
-              if (selectedPrices.length === 0) {
+               if (selectedPrices.length === 0) {
                   return true;
-              } else {
+               }
+               else {
                   return selectedPrices.some(range => {
                       const [minPrice, maxPrice] = range.split('-').map(parseFloat);
                          if (range === '50+') {
