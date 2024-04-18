@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import products from '../data/ProductData';
+import { products } from '../data/ProductData';
 
 export const ShopContext = createContext(null);
 
@@ -23,6 +23,8 @@ export const ShopContextProvider = (props) => {
      }
 
      const contextValue = {cartItems, addToCart, removeFromCart};
+
+     console.log(cartItems);
 
      return (
           <ShopContext.Provider value = {contextValue}>{props.children}</ShopContext.Provider>
