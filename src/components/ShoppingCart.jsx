@@ -6,7 +6,7 @@ import './ShoppingCart.css';
 
 
 function ShoppingCart() {
-     const cartItems = useContext(ShopContext);
+     const { cartItems } = useContext(ShopContext);
 
      return (
           <div className="cart">
@@ -15,10 +15,10 @@ function ShoppingCart() {
                </div>
                <div className="cartItem">
                     {products.map ((product) => {
-                         if(cartItems[product.id] !== 0) {
-                              return <CartItem key={product.id} data={product}/>
-                         }
-                         return null;
+                         if (cartItems[product.id] > 0) {
+                              return <CartItem key={product.id} data={product} />;
+                          }
+                          return null;
                     })}
                </div>
           </div>
