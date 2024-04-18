@@ -7,6 +7,11 @@ const CartItem = ({ data }) => {
             <div className="description">
                 <p>{data.name}</p>
                 <p>${data.price}</p>
+                    <div className="countHandler">
+                         <button> - </button>
+                         <input />
+                         <button> + </button>
+                    </div>
             </div>
         </div>
      )
