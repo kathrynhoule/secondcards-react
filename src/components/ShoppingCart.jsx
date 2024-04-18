@@ -15,8 +15,9 @@ function ShoppingCart() {
                <div className="cartItems">
                     {products.map ((product) => {
                          if(cartItems[product.id] !== 0) {
-                              return <CartItem data={product} />
+                              return <CartItem key={product.id} data={product}/>
                          }
+                         return null;
                     })}
                </div>
           </div>

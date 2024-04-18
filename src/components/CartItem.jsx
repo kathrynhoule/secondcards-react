@@ -1,6 +1,6 @@
 import React from "react";
 
-const CartItem = (props) => {
+const CartItem = (product) => {
      return (
           <div className = "cartItem">
           <img src={product.image} alt={product.name} />
