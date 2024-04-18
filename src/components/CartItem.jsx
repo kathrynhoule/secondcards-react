@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ShopContext } from "../context/ShopContext";
 
 const CartItem = ({ data }) => {
+     const { cartItems } = useContext(ShopContext);
      return (
           <div className = "cartItem">
             <img src={data.image} alt={data.name} />
@@ -9,7 +11,7 @@ const CartItem = ({ data }) => {
                 <p>${data.price}</p>
                     <div className="countHandler">
                          <button> - </button>
-                         <input />
+                         <input value = {cartItems[data.id]} />
                          <button> + </button>
                     </div>
             </div>
