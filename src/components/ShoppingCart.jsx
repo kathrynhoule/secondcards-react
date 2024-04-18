@@ -21,6 +21,11 @@ function ShoppingCart() {
                           return null;
                     })}
                </div>
+               <div className="checkout">
+                    <p>Subtotal: $</p>
+                    <button>Continue Shopping</button>
+                    <button>Checkout</button>
+               </div>
           </div>
      );
 }
