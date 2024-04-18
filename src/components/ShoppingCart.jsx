@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { products } from '../data/ProductData';
 import { ShopContext } from '../context/ShopContext';
 import CartItem from './CartItem';
+import './ShoppingCart.css';
 
 
 function ShoppingCart() {
@@ -12,7 +13,7 @@ function ShoppingCart() {
                <div>
                     <h3>Your Cart Items</h3>
                </div>
-               <div className="cartItems">
+               <div className="cartItem">
                     {products.map ((product) => {
                          if(cartItems[product.id] !== 0) {
                               return <CartItem key={product.id} data={product}/>
