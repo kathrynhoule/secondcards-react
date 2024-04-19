@@ -40,13 +40,17 @@
      font-weight: bolder;
 }
 
-.checkout button {
+.checkoutnav button {
      width: 150px;
      height: 50px;
-     background-color: blue;
+     background-color: #ED254E;
      color: white;
      border: none;
      border-radius: 8px;
      margin: 10px;
      cursor: pointer;
+}
+
+.checkoutnav p {
+     color: white;
 }

@@ -24,7 +24,7 @@ function ShoppingCart() {
                           return null;
                     })}
                </div>
-               <div className="checkout">
+               <div className="checkoutnav">
                     <p>Subtotal: ${totalAmount}</p>
                     <button onClick={() => navigate("/shop")}>Continue Shopping</button>
                     <button onClick={() => navigate("/checkout")}>Checkout</button>
