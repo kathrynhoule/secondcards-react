@@ -9,6 +9,7 @@ import Cart from './pages/Cart';
 import Contact from './pages/Contact';
 import Account from './pages/Account';
 import { ShopContextProvider } from './context/ShopContext';
+import CheckoutForm from './components/CheckoutForm';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/account" element={<Account />} />
+            <Route path="/checkout" element={<CheckoutForm />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </ShopContextProvider>
