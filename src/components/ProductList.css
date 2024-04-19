@@ -8,9 +8,9 @@
      border: none;
      gap: 2em;
      padding-bottom: 3em;
- }
+}
 
- .gallery > * {
+.gallery > * {
      flex-basis: calc(25% - (2em + 4px));
      overflow: hidden;
 }

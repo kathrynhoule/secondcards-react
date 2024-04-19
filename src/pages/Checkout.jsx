@@ -1,10 +1,13 @@
 import React from 'react';
 import './Checkout.css';
+import OrderSummary from '../components/OrderSummary';
+import CheckoutForm from '../components/CheckoutForm';
 
 function Checkout() {
   return (
     <div className="checkout">
-      <h1>Checkout</h1>
+      <CheckoutForm />
+      <OrderSummary />
     </div>
   );
 }

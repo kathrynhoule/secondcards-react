@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+.checkoutform {
+     display: flex;
+     flex: 1;
+     flex-wrap: wrap;
+     margin: auto;
+     max-width: 80%;
+     padding-left: 2em;
+     border: none;
+     gap: 2em;
+     padding-bottom: 3em;
+}
+
+.checkoutform h3 {
+     color: #EBEBEB;
+     font-family: 'Kode Mono', monospace;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+}
