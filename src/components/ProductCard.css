@@ -13,7 +13,8 @@
    }
    
 .productcard:hover {
-     transform: scale(1.02); 
+     transform: scale(1.02);
+     box-shadow: 0 2px 20px #ED254E;
 }
 
 .productcard img {
