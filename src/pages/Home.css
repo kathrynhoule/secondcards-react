@@ -1,0 +1,28 @@
+.home {
+     text-align: center;
+}
+   
+.container {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+     margin: 20px;
+}
+   
+.column {
+     padding: 20px;
+     margin: 0 10px;
+     color: #EBEBEB;
+}
+   
+.column1 {
+     flex: 1;
+}
+   
+.column2 {
+     flex: 2;
+}
+   
+.column3 {
+     flex: 2;
+}
