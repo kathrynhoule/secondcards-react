@@ -18,7 +18,7 @@ Products are now mapped with product cards, so when they are displayed on the sh
 Products can also be added and removed from the user's cart from the Cart page, and the user can now view the subtotal of all their cart items.
 
 # Future Updates
-Moving forward, additional filters will be added to the site and the existing product data will be updated to work with them. The search bar on the Shop page may also be updated to only rerender when the user hits enter on their search, instead of updating the products shown as the user types. Ideally, filters will also be applied only when the user submits them via a button.
+Moving forward, additional filters will be added to the site and the existing product data will be updated to work with them. The search bar on the Shop page may also be updated to only rerender the page when the user hits enter on their search, instead of updating the products shown as the user types. Ideally, filters will also be applied only when the user submits them via a button.
 
 The Shop page will ideally be updated to display no products and a message if the user selects a combination of filters that do not match any products, as the Shop page right now returns all products in this case. The Shop page will also need to display a max number of products per page and allow the user to flip through different pages of products, once the site is connected to a database and more products are displayed on the site.
 
@@ -26,6 +26,6 @@ Product cards on the Shop page will link to individual product pages that will d
 
 Ideally, if the user's cart is empty, the Cart page will display a message saying the cart is empty, and not show a button to checkout. In the future, the Checkout form will continue to be updated to be a full form, and the order summary will display all the info for the items in the user's cart at checkout.
 
-The Homepage currently displays nothing, but at the very least a component will be added to display some site info, and have a component for showing the lastest posts from the business' social media accounts. The About page will have minimal functions, and will mostly just be for displaying info about the company.
+The Homepage currently has limited content, but will hopefully be updated to have a component for showing the lastest posts from the business' social media accounts. The About page will have minimal functions, and will mostly just be for displaying info about the company.
 
-The site as a whole will also need to be updated so that it functions properly and looks good at multiple screen sizes, as most of the previous media queries for the site are now outdated after all the site changes that have been made.
+The site as a whole will also need to be updated so that it functions properly and looks good at multiple screen sizes, as most of the previous media queries for the site are now outdated after all the site changes that have been made. The only section that is compatible with mutliple screen sizes is the product card section on the shop page.
