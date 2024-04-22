@@ -4,6 +4,7 @@ import homepageplaceholder from '../productimages/homepageplaceholder.png';
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from 'react-icons/fa';
 import { FaTwitch } from 'react-icons/fa';
+import { MdMail } from 'react-icons/md';
 
 function Home() {
      return (
@@ -13,6 +14,7 @@ function Home() {
                     <FaInstagram className="socialicon" id="instagram" size={32} />
                     <FaTwitter className="socialicon" id="twitter" size={32} />
                     <FaTwitch className="socialicon" id="twitch" size={32} />
+                    <MdMail className="socialicon" id="email" size={32} />
                     </div>
                     <div className="column column2">
                     <h1>Second Cards</h1>
