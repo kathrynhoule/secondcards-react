@@ -15,7 +15,6 @@ const Header = () => {
                    <li id="about"><Link to="/about">ABOUT</Link></li>
                    <li id="shop"><Link to="/shop">SHOP</Link></li>
                    <li id="cart"><Link to="/cart"><FaShoppingCart />CART</Link></li>
-                   <li id="request"><Link to="/contact">CONTACT</Link></li>
                    <li id="account"><Link to="/account">ACCOUNT</Link></li>
                </ul>
                <GiHamburgerMenu id="hamburger-menu" size={32} alt="click to open menu" />

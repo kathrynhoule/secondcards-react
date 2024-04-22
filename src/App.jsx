@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Shop from './pages/Shop';
 import Cart from './pages/Cart';
-import Contact from './pages/Contact';
 import Account from './pages/Account';
 import { ShopContextProvider } from './context/ShopContext';
 import Checkout from './pages/Checkout';
@@ -21,7 +20,6 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="/account" element={<Account />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/" element={<Home />} />
