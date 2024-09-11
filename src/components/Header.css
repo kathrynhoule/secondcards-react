@@ -1,73 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 .header {
      display:flex;
      justify-content: space-between;
      align-items: center;
-     background-color: #EBEBEB;
-     padding: 0 20px;
-   }
+     background-color: #1E1E1E;
+     padding-top: 0.4em;
+     padding-left: 2em;
+     padding-right: 2em;
+     padding-bottom: 1em;
+}
 
-a {
+.header a {
      text-decoration: none;
      color: inherit;
- }
+}
    
-   h1 {
-     font-family: 'Monofett', monospace;
-     color: #484847;
-   }
+.header h1 {
+     font-family: 'Kode Mono', monospace;
+     font-weight: 700;
+     font-size: 24px;
+     color: #EBEBEB;
+}
    
-   #navbarlist {
-     font-family: Monofett;
-     font-size: 32px;
+#navbarlist {
+     font-family: 'Kode Mono', monospace;
+     font-size: 18px;
      font-style: normal;
      font-weight: 400;
      line-height: normal;
      padding: 0 15px;
-   }
+}
    
-   ul {
+.header ul {
      display: flex;
      width: 100%;
      justify-content: space-around;
      list-style-type: none;
      font-size: 24px;
      margin: 0;
-   }
+}
    
-   li {
+.header li {
      padding-left:1em;
      padding-right:1em;
      margin: 0;
-   }
+}
    
    #about {
      color:#129490;
-   }
+  }
    
    #shop {
      color:#65AD97;
-   }
+  }
 
    #request {
      color:#D5B658;
-   }
+  }
    
    #cart {
      color:#9DB278;
-   }
+  }
+
+   #account {
+    color:#D5B658;
+  }
 
    #hamburger-menu {
      padding-bottom:1em;
      padding-right:1em;
+     padding-top: 1em;
+     color: #EBEBEB;
    }
 
-   @media only screen and (min-width: 1201px) {
+   @media only screen and (min-width: 950px) {
      #hamburger-menu {
           display: none;
      }
    }
    
-   @media only screen and (max-width: 1200px) {
+   @media only screen and (max-width: 951px) {
      #navbarlist {
           display: none;
      }

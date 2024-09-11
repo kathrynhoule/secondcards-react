@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+.ordersummary {
+     width: 20%;
+     display: flex;
+     flex-direction: column;
+     padding-left: 3em;
+     margin-bottom: 3em;
+     margin-right: 2em;
+     padding-top: 1em;
+     background-color: #EBEBEB;
+     height: 100vh;
+}
+
+.ordersummary h1 {
+     color: #1E1E1E;
+     font-family: 'Kode Mono', monospace;
+     font-size: 22px;
+     font-style: normal;
+     font-weight: 700;
+}
+
+.ordersummary h2 {
+     color: #1E1E1E;
+     font-family: 'Kode Mono', monospace;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+}
+
+.ordersummary h3 {
+     color: #1E1E1E;
+     font-family: 'Kode Mono', monospace;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+}

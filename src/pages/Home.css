@@ -1,0 +1,46 @@
+.home {
+     text-align: center;
+}
+   
+.container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 20px;
+     margin: 20px;
+}
+   
+.column {
+     padding: 20px;
+     margin: 0 10px;
+     color: #EBEBEB;
+}
+   
+.column1 {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     padding-top: 3em;
+}
+   
+.column2 {
+     flex: 3;
+     text-align: left;
+}
+
+.column2 h1 {
+     font-size: 4em;
+}
+   
+.column3 {
+     flex: 1;
+     padding-top: 3em;
+}
+
+.column3 img {
+     height: 80%;
+}
+
+.socialicon {
+     padding: 1em;
+}
