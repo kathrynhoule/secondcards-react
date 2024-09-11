@@ -29,9 +29,6 @@ Ideally, if the user's cart is empty, the Cart page will display a message sayin
 The Homepage currently has limited content, but will hopefully be updated to have a component for showing the lastest posts from the business' social media accounts. The About page will have minimal functions, and will mostly just be for displaying info about the company.
 
 The site as a whole will also need to be updated so that it functions properly and looks good at multiple screen sizes, as most of the previous media queries for the site are now outdated after all the site changes that have been made. The only section that is compatible with mutliple screen sizes is the product card section on the shop page.
-=======
-This project utilizes Vite, as well as React and the React package react-refresh.
-React-refresh is necessary to view the images as they are currently set up.
 
 # General Information
 This application is intended for an e-commerce website selling trading cards. 
